@@ -9,22 +9,29 @@
 </head>
 <body>
      <div id="wrap">
+          <div class="mainImg"></div>
+          <div class="gradi"></div>
           <header class="header">
                <h1 class="logo">NETFLEIX</h1>
-               <div>
-                    <select name="" id="selecLg">
-                         <option value="ko">한국어</option>
-                         <option value="eng">영어</option>
-                    </select>
+               <div class="topMenu">
+                    <div class="selection_container">
+                         <div class="select_wrap">
+                              <div class="img1"><img src="/Image/globe icon.png"></div>
+                              <div class="img2"><img src="/Image/pointtobottom.png"></div>
+                              <select name="" id="lang" placeholder="lang-switch" tabindex="0">
+                                   <option value="ko">한국어</option>
+                                   <option value="eng">영어</option>
+                              </select>
+                         </div>
+                    </div>
                     <button type="button">로그인</button>
                </div>
           </header>
 
           <section id="search">
-               <p class="adText">영화와 시리즈를 무제한으로.</p>
+               <p>영화와 시리즈를 무제한으로.</p>
                <p>다양한 디바이스에서 시청하세요. 언제든지 해지하실 수 있습니다.</p>
                <p>시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.</p>
-
                <input type="email" class="mainEmail">
                <button type="submit">시작하기</button>
           </section>
