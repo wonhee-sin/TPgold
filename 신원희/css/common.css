@@ -25,6 +25,8 @@ section {position : relative; text-align: center; line-height: 1.2; z-index: 100
                font-size: 30px; color: #fff; background: rgb(216, 0, 0);}
 #search .btn_start:hover {background: rgb(255, 0, 0); cursor: pointer;}
 #search .btn_start:active {background: rgb(196, 0, 0); cursor: pointer; outline: 2px solid rgb(94, 0, 0);}
+
+
 #email_wrap {width: 550px; height: 68px; display: inline-block; position: relative; background: #fff; top : -20px; cursor: text;}
 #email_wrap .email_text{position: absolute; font-size: 16px; color: #aaa; left: 25px; top: 25px; cursor:default}
 #email_wrap .mainEmail {width: 500px; height: 30px; font-size: 16px; background: none; border: none; position: relative; top: 20px;}
