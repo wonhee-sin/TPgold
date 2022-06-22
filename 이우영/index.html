@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>넷플릭스 대한민국 - 인터넷으로 시리즈와 영화를 시청하세요</title>
+    <link rel="icon" href="../Image/netflix-logos-and-brands-icon.png">
     <link rel="stylesheet" href="./css/common.css">
     <script src="./js/jquery-3.6.0.js"></script>
     <script src="./js/common.js"></script>
@@ -31,36 +32,45 @@
             <div id="contents" class="clear">
                 <div class="firstBg"></div>
                 <div class="backgroundB"></div>
+                <div class="backgroundB"></div>
                 <div class="firstCard">
                     <h1>영화와 시리즈를 무제한으로.</h1>
                     <h2>다양한 디바이스에서 시청하세요. 언제든 해지하실 수 있습니다.</h2>
-                    <h3>시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.<h3>
-                    <form method="get">
-                        <label class="get_email">
-                            <input type="email">
-                            <button type="submit">시작하기></button>
-                        </label>
-                    </form>
+                    <h3>시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.</h3>
+                    <div class="get_email">
+                        <form method="get">
+                            <input type="email" class="email_text">
+                            <button type="submit">시작하기 ></button>
+                        </form>
+                    </div>
                 </div>
-                <div class="secondCard">
-                    <h1>TV로 즐기세요.</h1>
-                    <h2>스마트 TV, PlayStation, Xbox, Chromecast, Apple TV, 블루레이 플레이어 등 다양한 디바이스에서 시청하세요.</h2>
+                <div class="secondCard card">
+                    <div class="cardText">
+                        <h1>TV로 즐기세요.</h1>
+                        <h2>스마트 TV, PlayStation, Xbox, Chromecast, Apple TV, 블루레이 플레이어 등 다양한 디바이스에서 시청하세요.</h2>
+                    </div>
                     <img src="../Image/tv.png">
                 </div>
-                <div class="thirdCard">
+                <div class="thirdCard card">
                     <img src="../Image/mobileimg.jpg">
-                    <h1>즐겨 보는 콘텐츠를 저장해 오프라인으로 시청하세요.</h1>
-                    <h2>간편하게 저장하고 빈틈없이 즐겨보세요.</h2>
+                    <div class="cardText">
+                        <h1>즐겨 보는 콘텐츠를 저장해 오프라인으로 시청하세요.</h1>
+                        <h2>간편하게 저장하고 빈틈없이 즐겨보세요.</h2>
+                    </div>
                 </div>
-                <div class="fourthCard">
-                    <h1>다양한 디바이스에서 시청하세요.</h1>
-                    <h2>각종 영화와 시리즈를 스마트폰, 태블릿, 노트북, TV에서 무제한으로 스트리밍하세요. 추가 요금이 전혀 없습니다.</h2>
+                <div class="fourthCard card">
+                    <div class="cardText">
+                        <h1>다양한 디바이스에서 시청하세요.</h1>
+                        <h2>각종 영화와 시리즈를 스마트폰, 태블릿, 노트북, TV에서 무제한으로 스트리밍하세요. 추가 요금이 전혀 없습니다.</h2>
+                    </div>
                     <img src="../Image/device-pile.png">
                 </div>
-                <div class="fifthCard">
+                <div class="fifthCard card">
                     <img src="../Image/kidsValueProp.png">
-                    <h1>어린이 전용 프로필을 만들어 보세요.</h1>
-                    <h2>자기만의 공간에서 좋아하는 캐릭터와 즐기는 신나는 모험. 자녀에게 이 특별한 경험을 선물하세요. 넷플릭스 회원이라면 무료입니다.</h2>
+                    <div class="cardText">
+                        <h1>어린이 전용 프로필을 만들어 보세요.</h1>
+                        <h2>자기만의 공간에서 좋아하는 캐릭터와 즐기는 신나는 모험. 자녀에게 이 특별한 경험을 선물하세요. 넷플릭스 회원이라면 무료입니다.</h2>
+                    </div>
                 </div>
                 <div class="lastCard">
                     <h1>자주 묻는 질문</h1>
@@ -97,21 +107,27 @@
                         </li>
                     </ul>
                     <h3>시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.</h3>
-                    <form method="get">
-                        <label class="get_email">
-                            <input type="email">
-                            <button type="submit">시작하기></button>
-                        </label>
-                    </form>
+                    <div class="get_email">
+                        <form method="get">
+                            <input type="email" class="email_text">
+                            <button type="submit">시작하기 ></button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
         <footer>
-            <p>질문이 있으신가요? 문의 전화: 080-001-9587</p>
-            <select class="lang_select">
-                <option>한국어</option>
-                <option>English</option>
-            </select>
+            <div class="footer_box">
+                <p>질문이 있으신가요? 문의 전화: 080-001-9587</p>
+                <div id="selectWrap">
+                    <img src="../Image/globe icon.png" class="global_icon">
+                    <select class="lang_select">
+                        <option>한국어</option>
+                        <option>English</option>
+                    </select>
+                    <img src="../Image/pointtobottom.png" class="arrow">
+                </div>
+            </div>
         </footer>
     </div>
 </body>
