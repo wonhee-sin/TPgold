@@ -2,9 +2,9 @@
 
 body {background: black;}
 #wrap{position: relative;}
-.mainImg {width: 100%; height:680px; background: url(/Image/section_1_BG.jpg) no-repeat; 
-          background-size: 100%; position: absolute; border-bottom: 8px solid #888;}
-.gradi {width: 100%; height: 680px; background: linear-gradient(to top,rgba(0,0,0,.9) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.9) 100%); background-size: 100%; position: absolute;}
+.mainImg {width: 100%; height:770px; background: url(/Image/section_1_BG.jpg) no-repeat; 
+          background-size: 100%; position: absolute; border-bottom: 8px solid #222;}
+.gradi {width: 100%; height: 770px; background: linear-gradient(to top,rgba(0,0,0,.9) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.9) 100%); background-size: 100%; position: absolute;}
 header {width: 100%; height: 80px; position: relative;}
 .header .logo {float: left; margin: 20px 0 0 15px; text-indent: -9999px; overflow: hidden; width: 150px; background: url(/Image/Logonetflix.png)no-repeat;
                background-size: 150px;}
@@ -17,8 +17,14 @@ header {width: 100%; height: 80px; position: relative;}
 .header .selection_container .select_wrap .img2 {position: absolute; width: 20px; margin: 0; top: 10px; left: 75px;}
 .header .topMenu button {width: 90px; height: 38px; background: red; border: 0; border-radius: 5px; color: #fff; margin: 0;}
 section {position : relative; text-align: center; line-height: 1.2; z-index: 1000;}
-#search p {margin: 0 auto; font-size: 50px; font-weight: bolder; width: 50%; margin-bottom: 15px; margin-top: 150px; color: #fff;}
-#search p:nth-child(2) {margin: 0 auto; font-size: 24px; font-weight: bold; width: 70%; margin-bottom: 15px;} 
-#search p:nth-child(3) {font-size: 24px; font-weight: bold; width: 45%; margin: 0 auto; margin-bottom: 15px;}
-.mainEmail {display: block; margin: 0 auto; margin-bottom: 15px; width: 450px; height: 50px; font-size: 24px;}
-
+#search p {margin: 0 auto; font-size: 65px; 
+              line-height: 1.4; font-weight: bolder; width: 500px; margin-bottom: 15px; margin-top: 150px; color: #fff;}
+#search p:nth-child(2) {margin: 0 auto; font-size: 26px; font-weight: normal; width: 70%; margin-bottom: 18px;} 
+#search p:nth-child(3) {font-size: 20px; font-weight: normal; width: 45%; margin: 0 auto; margin-bottom: 15px;}
+#search .btn_start{margin: 0; width: 220px; height: 72px; position: relative; top: 7px; left: -5px; text-align: center;
+               font-size: 30px; color: #fff; background: rgb(216, 0, 0);}
+#search .btn_start:hover {background: rgb(255, 0, 0); cursor: pointer;}
+#search .btn_start:active {background: rgb(196, 0, 0); cursor: pointer; outline: 2px solid rgb(94, 0, 0);}
+#email_wrap {width: 550px; height: 68px; display: inline-block; position: relative; background: #fff; top : -20px; cursor: text;}
+#email_wrap .email_text{position: absolute; font-size: 16px; color: #aaa; left: 25px; top: 25px; cursor:default}
+#email_wrap .mainEmail {width: 500px; height: 30px; font-size: 16px; background: none; border: none; position: relative; top: 20px;}
