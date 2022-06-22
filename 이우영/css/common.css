@@ -41,7 +41,7 @@ section{background: #000;}
 .get_email{height: 70px; width: 700px; margin: 0 auto; position: relative;}
 .get_email .email_text{width: 500px; height: 70px; font-size: 1rem; padding-left: 10px; position: absolute; left: 0;}
 .get_email button{width: 200px; height: 70px; font-size: 1.5rem; position: absolute; right: 0;}
-.get_email button:hover{background: rgb(255, 0, 0);}
+.get_email button:hover{background: rgb(255, 0, 0); cursor: pointer;}
 .get_email button:focus{box-sizing: content-box; background: rgb(187, 0, 0); outline: 3px solid rgb(121, 0, 0);}
 .card{height: 400px; position: relative;}
 .card img{width: 480px; position: absolute;}
