@@ -1,6 +1,6 @@
-*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0; box-sizing: border-box;}
 
-body {background: black;}
+body {background: black; color: #fff;} 
 #wrap{position: relative;}
 .mainImg {width: 100%; height:770px; background: url(/Image/section_1_BG.jpg) no-repeat; 
           background-size: 100%; position: absolute; border-bottom: 8px solid #222;}
@@ -21,12 +21,114 @@ section {position : relative; text-align: center; line-height: 1.2; z-index: 100
               line-height: 1.4; font-weight: bolder; width: 500px; margin-bottom: 15px; margin-top: 150px; color: #fff;}
 #search p:nth-child(2) {margin: 0 auto; font-size: 26px; font-weight: normal; width: 70%; margin-bottom: 18px;} 
 #search p:nth-child(3) {font-size: 20px; font-weight: normal; width: 45%; margin: 0 auto; margin-bottom: 15px;}
-#search .btn_start{margin: 0; width: 220px; height: 72px; position: relative; top: 7px; left: -5px; text-align: center;
+
+.btn_start{margin: 0; width: 220px; height: 72px; position: relative; top: 7px; left: -5px; text-align: center;
                font-size: 30px; color: #fff; background: rgb(216, 0, 0);}
-#search .btn_start:hover {background: rgb(255, 0, 0); cursor: pointer;}
-#search .btn_start:active {background: rgb(196, 0, 0); cursor: pointer; outline: 2px solid rgb(94, 0, 0);}
+.btn_start:hover {background: rgb(255, 0, 0); cursor: pointer;}
+.btn_start:active {background: rgb(196, 0, 0); cursor: pointer; outline: 2px solid rgb(94, 0, 0);}
+
+#email_wrap1 {width: 550px; height: 68px; display: inline-block; position: relative; background: #fff; top : -20px; cursor: text;}
+#email_wrap1 .email_text1{position: absolute; font-size: 16px; color: #aaa; left: 25px; top: 25px; cursor:default}
+#email_wrap1 .mainEmail1 {width: 500px; height: 30px; font-size: 16px; background: none; border: none; position: relative; top: 20px;}
+
+#email_wrap2 {width: 550px; height: 68px; display: inline-block; position: relative; background: #fff; top : -20px; cursor: text;}
+#email_wrap2 .email_text2{position: absolute; font-size: 16px; color: #aaa; left: 25px; top: 25px; cursor:default}
+#email_wrap2 .mainEmail2 {width: 500px; height: 30px; font-size: 16px; background: none; border: none; position: relative; top: 20px;}
+
+.part1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.part1 .talk{
+    width: 40%;
+}
+.part1 .talk h1 {
+    font-size: 3.3rem;
+    letter-spacing: 3px;
+}
+.part1 .img1{
+    width: 45%
+}
+.part1 .img img{
+    width: 100%;
+}
 
 
-#email_wrap {width: 550px; height: 68px; display: inline-block; position: relative; background: #fff; top : -20px; cursor: text;}
-#email_wrap .email_text{position: absolute; font-size: 16px; color: #aaa; left: 25px; top: 25px; cursor:default}
-#email_wrap .mainEmail {width: 500px; height: 30px; font-size: 16px; background: none; border: none; position: relative; top: 20px;}
+
+.faq {height: 70vh;}
+.faq-inner { width: 700px; margin: auto;}
+.faq-inner h1 {text-align: center; font-size: 50px; font-weight: 500; margin-bottom: 50px;}
+.accordion {font-size: 26px;}
+.accordion .title,
+.accordion .content {
+    background-color: #303030;
+    text-align: left;
+    padding: 10px 15px;
+    margin-bottom: 7px;
+}
+.accordion .title {cursor: pointer;}
+.accordion .title.active:after {
+    transform: rotate(45deg);
+}
+.accordion .title:after {
+    content: '\e9c5' ;
+    font-family: xeicon;
+    float: right;
+    margin-top: 2px;
+    transition: 0.35s;
+}
+.accordion .title.active {background-color: #353b48;}
+.accordion .content {display: none;}
+
+.newsletter {margin-top: 50px;}
+.newsletter p {margin: auto; width: 52%;}
+
+
+
+.card{height: 400px; margin-bottom: 60px; position: relative; border-bottom: 8px solid #222;}
+.card img{width: 480px; position: absolute;}
+.cardText{display: block; max-width: 500px; width: 50%; position: absolute; top: 80px;}
+.card h1{font-size: 3em; margin: 20px 0;}
+.secondCard{}
+.secondCard .cardText{left: calc(((100% - 500px) / 2) - 300px);}
+.secondCard h1{}
+.secondCard h2{}
+.secondCard img{left: calc(((100% - 500px) / 2) + 300px);}
+.thirdCard{}
+.thirdCard .cardText{left: calc(((100% - 500px) / 2) + 300px);}
+.thirdCard h1{}
+.thirdCard h2{}
+.thirdCard img{left: calc(((100% - 500px) / 2) - 300px);}
+.fourthCard{}
+.fourthCard .cardText{left: calc(((100% - 500px) / 2) - 300px);}
+.fourthCard h1{}
+.fourthCard h2{}
+.fourthCard img{left: calc(((100% - 500px) / 2) + 300px);}
+.fifthCard{}
+.fifthCard .cardText{left: calc(((100% - 500px) / 2) + 300px);}
+.fifthCard h1{}
+.fifthCard h2{}
+.fifthCard img{left: calc(((100% - 500px) / 2) - 300px);}
+.lastCard{padding-bottom: 120px;}
+.lastCard h1{text-align: center; font-size: 3em; margin: 80px 0 40px;}
+.lastCard ul{}
+.lastCard ul li{margin: 10px 0;}
+.lastCard ul li h2{width: 800px; height: 70px; margin: 0 auto; background: #333; padding: 20px 0 20px 30px; font-weight: normal;}
+.lastCard ul li div{display: none;}
+.lastCard h3{margin: 10px; margin-top: 30px; text-align: center;}
+
+
+footer {width: 100%; height: 50vh; margin: auto; padding-top: 100px; border-top: 8px solid #222;}
+.container-footer {width: 33%; margin: auto;}
+.container-footer p {font-size: 16px; color: #888;}
+.container-footer table {line-height: 3; margin : 0; width: 100%;}
+.container-footer table tr {margin: 0;}
+.container-footer table td {margin: 0; font-size: 12px;}
+a {text-decoration: none; color: #888;}
+
+.lang-footer {margin-top: 10px; margin-bottom: 10px; width: 100px; height: 30px; border: 1px solid #888; text-align: center; padding-top: 2px; border-radius: 3px;}
+.lang-footer i {margin-top: 3px;}
+.lang-footer select {background: none; color: #888; appearance: none; border: none;}
+.container-footer h5 {margin-top: 20px; color: #888; font-weight: normal;}
