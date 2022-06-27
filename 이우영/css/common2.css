@@ -43,30 +43,30 @@ section{background: #000;}
 .get_email button{width: 200px; height: 70px; font-size: 1.5rem; position: absolute; right: 0;}
 .get_email button:hover{background: rgb(255, 0, 0); cursor: pointer;}
 .get_email button:focus{box-sizing: content-box; background: rgb(187, 0, 0); outline: 3px solid rgb(121, 0, 0);}
-.card{height: 500px; position: relative;}
-.card img{width: 480px; position: absolute;}
-.cardText{display: block; max-width: 500px; width: 50%; position: absolute; top: 80px;}
+.card{height: 500px;}
+.card img{width: 480px; height: 360px; margin: 70px 0;}
+.cardText{max-width: 500px; width: 50%; height: 300px; margin: 100px 0;}
 .card h1{font-size: 3em; margin: 20px 0;}
 .secondCard{}
-.secondCard .cardText{left: calc(((100% - 500px) / 2) - 100% / 5);}
+.secondCard .cardText{float: left;}
 .secondCard h1{}
 .secondCard h2{}
-.secondCard img{left: calc(((100% - 500px) / 2) + 100% / 5);}
+.secondCard img{float: right;}
 .thirdCard{}
-.thirdCard .cardText{left: calc(((100% - 500px) / 2) + 100% / 5);}
+.thirdCard .cardText{float: right;}
 .thirdCard h1{}
 .thirdCard h2{}
-.thirdCard img{left: calc(((100% - 500px) / 2) - 100% / 5);}
+.thirdCard img{float: left;}
 .fourthCard{}
-.fourthCard .cardText{left: calc(((100% - 500px) / 2) - 100% / 5);}
+.fourthCard .cardText{float: left;}
 .fourthCard h1{}
 .fourthCard h2{}
-.fourthCard img{left: calc(((100% - 500px) / 2) + 100% / 5);}
+.fourthCard img{float: right;}
 .fifthCard{}
-.fifthCard .cardText{left: calc(((100% - 500px) / 2) + 100% / 5);}
+.fifthCard .cardText{float: right;}
 .fifthCard h1{}
 .fifthCard h2{}
-.fifthCard img{left: calc(((100% - 500px) / 2) - 100% / 5);}
+.fifthCard img{float: left;}
 .lastCard{padding-bottom: 120px;}
 .lastCard h1{text-align: center; font-size: 3em; margin: 80px 0 40px;}
 .lastCard ul{}
@@ -89,7 +89,7 @@ footer .lang_select option{background: #000;}
 @media all and (max-width: 1450px) and (min-width: 951px){
     .firstCard h1{width: 700px;}
     .firstCard h2{width: 600px;}
-    .card img{max-width: 480px; width : 40%; position: absolute;}
+    .card img{max-width: 480px; width: 40%; height: none;}
     .cardText{width: 40%;}
     .lastCard ul li h2{max-width: 800px; width: 80%; background-position-x: 95%;}
     .lastCard ul li h2.on{max-width: 800px; width: 80%; background-position-x: 95.5%;}
